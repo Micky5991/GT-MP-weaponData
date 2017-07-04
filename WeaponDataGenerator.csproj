@@ -65,10 +65,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="precreated\de\weaponData.json" />
     <Content Include="precreated\en\weaponData.json" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="precreated\de" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
