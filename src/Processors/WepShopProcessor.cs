@@ -53,8 +53,8 @@ namespace WeaponDataGenerator.Processors
 
         private static IEnumerable<WeaponComponentData> ProcessComponents(XElement elements)
         {
-            if(!elements.Elements().Any()) return new List<WeaponComponentData>();
             var components = new List<WeaponComponentData>();
+            if (!elements.Elements().Any()) return components;
 
             foreach (XElement element in elements.Elements())
             {
