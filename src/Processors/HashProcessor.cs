@@ -5,9 +5,9 @@ namespace WeaponDataGenerator.Processors
 {
     public class HashProcessor
     {
-        public static void HashWeapons(IEnumerable<WeaponData> weaponDatas)
+        public static void HashData(IEnumerable<IHashable> hashables)
         {
-            foreach (var weaponData in weaponDatas) weaponData.Hash();
+            foreach (var hashable in hashables) hashable.Hash();
         }
         
     }
